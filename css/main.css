@@ -15,20 +15,97 @@ html {
 }
 
 body {
-  margin: 1.5rem;
+  margin: 0;
 }
 
 h2 {
   font-size: 2rem;
-  margin: 0;
+  margin: .5em;
+  padding-top: .1em;
 }
 
 h3 {
   font-size: 1.5rem;
   text-align: center;
+  margin: 1.5rem;
 }
 
 p {
-  font-size: 1.125rem;
   text-align: left;
+  margin: .5rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem;
+  font-size: 1.125rem;
+  margin: 0 1.5em;
+}
+
+a:hover,
+a:focus {
+  color: #ff9500;
+}
+
+.banner {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.banner .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icon svg {
+  width: 9rem;
+  fill: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  h2 {
+    margin: 1em;
+    text-align: center;
+  }
+
+  h3 {
+    margin: .5em 0;
+    display: flex;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  p {
+    display: flex;
+    margin-bottom: 1.4rem;
+  }
+
+  a {
+    margin: .5em;
+    display: flex;
+    text-align: left;
+    font-size: .5rem;
+  }
+
+  .banner {
+    margin: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6vmin;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    margin: 6em;
+  }
+
 }
